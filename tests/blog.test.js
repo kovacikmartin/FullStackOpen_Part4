@@ -86,8 +86,6 @@ const mostLikedBlog = {
 
 describe('total likes', () => {
 
-    
-
     test('of an empty blog list is zero', () => {
 
         expect(listHelper.totalLikes([])).toBe(0)

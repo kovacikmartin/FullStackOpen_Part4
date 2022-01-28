@@ -5,12 +5,12 @@ const dummy = (blogs) => {
 }
 /* eslint-enable no-unused-vars */
 
-const totalLikes = (blogs) => {
+const totalLikes = blogs => {
 
     return blogs.reduce((sum, blog) => sum + blog.likes, 0)
 }
 
-const favoriteBlog = (blogs) => {
+const favoriteBlog = blogs => {
 
     const mostLiked = blogs.reduce((previous, current) => previous.likes > current.likes ? previous : current, {})
 
@@ -32,5 +32,5 @@ const favoriteBlog = (blogs) => {
 module.exports = { 
     dummy,
     totalLikes,
-    favoriteBlog 
+    favoriteBlog
 }
